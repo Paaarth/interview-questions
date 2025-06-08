@@ -1083,32 +1083,32 @@ JavaScript is a high-level, interpreted programming language used to create inte
 ### 2. What are the data types in JavaScript?
 
 **Answer:**
-Primitive types: `string`, `number`, `boolean`, `null`, `undefined`, `bigint`, `symbol`. Reference type: `object` (includes arrays and functions)[^2][^3][^7].
+Primitive types: `string`, `number`, `boolean`, `null`, `undefined`, `bigint`, `symbol`. Reference type: `object` (includes arrays and functions)
 
 ### 3. What is the difference between `null` and `undefined`?
 
 **Answer:**
-`undefined` means a variable has been declared but not assigned a value. `null` is an assignment value representing no value or an empty value[^3]
+`undefined` means a variable has been declared but not assigned a value. `null` is an assignment value representing no value or an empty value
 
 ### 4. What is hoisting in JavaScript?
 
 **Answer:**
-Hoisting is JavaScript’s default behavior of moving declarations to the top of their scope before code execution[^2][^3][^5].
+Hoisting is JavaScript’s default behavior of moving declarations to the top of their scope before code execution
 
 ### 5. What is the difference between `var`, `let`, and `const`?
 
 **Answer:**
-`var` is function-scoped, `let` and `const` are block-scoped. `let` can be reassigned, `const` cannot be reassigned[^3]
+`var` is function-scoped, `let` and `const` are block-scoped. `let` can be reassigned, `const` cannot be reassigned
 
 ### 6. What is the difference between `==` and `===`?
 
 **Answer:**
-`==` checks for value equality after type coercion; `===` checks for value and type equality without coercion[^3]
+`==` checks for value equality after type coercion; `===` checks for value and type equality without coercion
 
 ### 7. What is a closure?
 
 **Answer:**
-A closure is a function that has access to its own scope, the outer function’s variables, and global variables[^3]
+A closure is a function that has access to its own scope, the outer function’s variables, and global variables
 
 ### 8. What is an anonymous function?
 
@@ -1118,42 +1118,42 @@ An anonymous function is a function without a name, often used as arguments to o
 ### 9. What is a callback function?
 
 **Answer:**
-A callback is a function passed as an argument to another function and executed after some event or task[^3]
+A callback is a function passed as an argument to another function and executed after some event or task
 
 ### 10. What is a promise?
 
 **Answer:**
-A promise is an object representing the eventual completion or failure of an asynchronous operation[^3]
+A promise is an object representing the eventual completion or failure of an asynchronous operation
 
 ### 11. What is `async/await`?
 
 **Answer:**
-`async/await` is a syntax to write asynchronous code that looks synchronous, using `async` functions and the `await` keyword[^3]
+`async/await` is a syntax to write asynchronous code that looks synchronous, using `async` functions and the `await` keyword
 
 ### 12. What is the purpose of `setTimeout()`?
 
 **Answer:**
-`setTimeout()` executes a function after a specified delay in milliseconds[^3][^7].
+`setTimeout()` executes a function after a specified delay in milliseconds
 
 ### 13. What is the purpose of `setInterval()`?
 
 **Answer:**
-`setInterval()` repeatedly executes a function at specified intervals[^3][^7].
+`setInterval()` repeatedly executes a function at specified intervals
 
 ### 14. What is the difference between `function` and `arrow function`?
 
 **Answer:**
-Arrow functions do not have their own `this`, `arguments`, `super`, or `new.target` bindings[^3]
+Arrow functions do not have their own `this`, `arguments`, `super`, or `new.target` bindings
 
 ### 15. What is the `this` keyword in JavaScript?
 
 **Answer:**
-`this` refers to the object it belongs to, depending on how a function is called[^3]
+`this` refers to the object it belongs to, depending on how a function is called
 
 ### 16. What is the difference between `call()`, `apply()`, and `bind()`?
 
 **Answer:**
-All three set the `this` value. `call()` and `apply()` call the function immediately, with `apply()` taking arguments as an array. `bind()` returns a new function with `this` set[^3]
+All three set the `this` value. `call()` and `apply()` call the function immediately, with `apply()` taking arguments as an array. `bind()` returns a new function with `this` set
 
 ### 17. What is event bubbling?
 
@@ -1173,7 +1173,7 @@ Event delegation is attaching a single event listener to a parent to manage even
 ### 20. What is the purpose of the `debugger` statement?
 
 **Answer:**
-The `debugger` statement pauses code execution, allowing inspection of variables and the call stack[^2][^3][^5].
+The `debugger` statement pauses code execution, allowing inspection of variables and the call stack
 
 ### 21. What is the DOM?
 
@@ -1218,82 +1218,82 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format based
 ### 29. What is a prototype in JavaScript?
 
 **Answer:**
-A prototype is an object from which other objects inherit properties[^3]
+A prototype is an object from which other objects inherit properties
 
 ### 30. What is prototypal inheritance?
 
 **Answer:**
-Prototypal inheritance is a feature where objects can inherit properties and methods from other objects[^3]
+Prototypal inheritance is a feature where objects can inherit properties and methods from other objects
 
 ### 31. What is the difference between `Object.create()` and constructor functions?
 
 **Answer:**
-`Object.create()` creates a new object with a specified prototype; constructor functions create objects using the `new` keyword[^3]
+`Object.create()` creates a new object with a specified prototype; constructor functions create objects using the `new` keyword
 
 ### 32. What is a constructor function?
 
 **Answer:**
-A constructor function is used to create objects with the `new` keyword[^3]
+A constructor function is used to create objects with the `new` keyword
 
 ### 33. What is a class in JavaScript?
 
 **Answer:**
-A class is a template for creating objects, introduced in ES6[^3]
+A class is a template for creating objects, introduced in ES6
 
 ### 34. What is the difference between `forEach()` and `map()`?
 
 **Answer:**
-`forEach()` executes a function on each element; `map()` returns a new array with the results of the function[^6].
+`forEach()` executes a function on each element; `map()` returns a new array with the results of the function
 
 ### 35. What is the difference between `filter()` and `find()`?
 
 **Answer:**
-`filter()` returns all elements that match a condition; `find()` returns the first element that matches[^6].
+`filter()` returns all elements that match a condition; `find()` returns the first element that matches
 
 ### 36. How do you check if an array includes a value?
 
 **Answer:**
-`array.includes(value)`[^3][^6].
+`array.includes(value)`
 
 ### 37. How do you remove duplicates from an array?
 
 **Answer:**
-`[...new Set(array)]` or `array.filter((item, index) => array.indexOf(item) === index)`[^3][^6].
+`[...new Set(array)]` or `array.filter((item, index) => array.indexOf(item) === index)`
 
 ### 38. What is the difference between `slice()` and `splice()`?
 
 **Answer:**
-`slice()` returns a shallow copy of a portion of an array; `splice()` changes the contents by removing or replacing existing elements[^6].
+`slice()` returns a shallow copy of a portion of an array; `splice()` changes the contents by removing or replacing existing elements
 
 ### 39. What is the difference between `push()` and `pop()`?
 
 **Answer:**
-`push()` adds elements to the end of an array; `pop()` removes the last element[^6].
+`push()` adds elements to the end of an array; `pop()` removes the last element
 
 ### 40. What is the difference between `shift()` and `unshift()`?
 
 **Answer:**
-`shift()` removes the first element; `unshift()` adds elements to the beginning[^6].
+`shift()` removes the first element; `unshift()` adds elements to the beginning
 
 ### 41. What is a rest parameter?
 
 **Answer:**
-A rest parameter allows a function to accept an indefinite number of arguments as an array[^3]
+A rest parameter allows a function to accept an indefinite number of arguments as an array
 
 ### 42. What is a spread operator?
 
 **Answer:**
-The spread operator (`...`) expands arrays or objects into individual elements[^3]
+The spread operator (`...`) expands arrays or objects into individual elements
 
 ### 43. What is destructuring assignment?
 
 **Answer:**
-Destructuring assignment unpacks values from arrays or properties from objects into distinct variables[^3]
+Destructuring assignment unpacks values from arrays or properties from objects into distinct variables
 
 ### 44. What is the difference between `Object.keys()` and `Object.values()`?
 
 **Answer:**
-`Object.keys()` returns an array of keys; `Object.values()` returns an array of values[^3]
+`Object.keys()` returns an array of keys; `Object.values()` returns an array of values
 
 ### 45. What is the difference between `Object.freeze()` and `const`?
 
@@ -1303,17 +1303,17 @@ Destructuring assignment unpacks values from arrays or properties from objects i
 ### 46. What is a generator function?
 
 **Answer:**
-A generator function allows you to pause and resume execution, using the `yield` keyword[^3]
+A generator function allows you to pause and resume execution, using the `yield` keyword
 
 ### 47. What is memoization?
 
 **Answer:**
-Memoization is an optimization technique that stores the results of expensive function calls[^3]
+Memoization is an optimization technique that stores the results of expensive function calls
 
 ### 48. What is currying?
 
 **Answer:**
-Currying is converting a function with multiple arguments into a sequence of functions with single arguments[^3]
+Currying is converting a function with multiple arguments into a sequence of functions with single arguments
 
 ### 49. What is a pure function?
 
@@ -1328,7 +1328,7 @@ Functional programming is a paradigm where programs are constructed by composing
 ---
 
 **Note:**
-Due to space and practical constraints, this answer provides the first 50 questions and answers in detail. However, here is a summary of additional question topics to reach 200, with brief answers or concepts. For a full list with detailed answers, consider using resources like GitHub repositories or interview prep sites[^4][^6]
+Due to space and practical constraints, this answer provides the first 50 questions and answers in detail. However, here is a summary of additional question topics to reach 200, with brief answers or concepts. For a full list with detailed answers, consider using resources like GitHub repositories or interview prep sites
 
 ---
 
@@ -1509,17 +1509,17 @@ JSON.parse(JSON.stringify(obj));
 ### 101–150: Advanced Concepts, Error Handling, and DOM
 
 - **101. How do you handle errors in JavaScript?**
-  Use `try...catch` blocks[^3][^5].
+  Use `try...catch` blocks
 - **102. What is a custom error?**
   A custom error is an error type you define by extending `Error`.
 - **103. What is the difference between `throw` and `return`?**
   `throw` raises an exception; `return` exits a function with a value.
 - **104. What is the difference between synchronous and asynchronous code?**
-  Synchronous code runs sequentially; asynchronous code runs out of order using callbacks, promises, or async/await[^3][^5].
+  Synchronous code runs sequentially; asynchronous code runs out of order using callbacks, promises, or async/await
 - **105. What is a callback function?**
-  A function passed as an argument to another function and executed after some event or task[^3][^5].
+  A function passed as an argument to another function and executed after some event or task
 - **106. What is a promise chain?**
-  A sequence of `.then()` calls for handling asynchronous operations[^3][^5].
+  A sequence of `.then()` calls for handling asynchronous operations
 - **107. What is the difference between `Promise.all()` and `Promise.allSettled()`?**
   `Promise.all()` rejects if any promise rejects; `Promise.allSettled()` waits for all to settle.
 - **108. What is the difference between `Promise.race()` and `Promise.any()`?**
@@ -1527,23 +1527,23 @@ JSON.parse(JSON.stringify(obj));
 - **109. What is a microtask?**
   A microtask is a task that runs after the current script and before the next event loop cycle.
 - **110. What is the event loop?**
-  The event loop is a mechanism that processes events and executes callback functions[^3][^5].
+  The event loop is a mechanism that processes events and executes callback functions
 - **111. What is the difference between the call stack and the callback queue?**
   The call stack tracks function calls; the callback queue holds functions to be executed.
 - **112. What is a macro task?**
   A macro task is a task that runs after the current script and after microtasks.
 - **113. What is a debounce function?**
-  A debounce function limits the rate at which a function is called[^6].
+  A debounce function limits the rate at which a function is called
 - **114. What is a throttle function?**
-  A throttle function ensures a function is called at most once in a specified period[^6].
+  A throttle function ensures a function is called at most once in a specified period
 - **115. What is a curried function?**
-  A curried function is a function that takes multiple arguments one at a time[^3][^5].
+  A curried function is a function that takes multiple arguments one at a time
 - **116. What is a pure function?**
   A pure function always returns the same output for the same input and has no side effects
 - **117. What is a side effect?**
   A side effect is any application state change observable outside the called function.
 - **118. What is a closure?**
-  A closure is a function that remembers its lexical scope even when executed outside that scope[^3][^5].
+  A closure is a function that remembers its lexical scope even when executed outside that scope
 - **119. What is a lexical scope?**
   Lexical scope is the scope defined by the physical placement of variables and blocks in the source code.
 - **120. What is a block scope?**
@@ -1555,9 +1555,9 @@ JSON.parse(JSON.stringify(obj));
 - **123. What is a module scope?**
   Module scope is the scope of variables declared in a module, not global.
 - **124. What is the difference between `null` and `undefined`?**
-  `undefined` means a variable is declared but not assigned; `null` is an assignment value[^3][^5].
+  `undefined` means a variable is declared but not assigned; `null` is an assignment value
 - **125. What is the difference between `==` and `===`?**
-  `==` checks value with coercion; `===` checks value and type[^3][^5].
+  `==` checks value with coercion; `===` checks value and type
 - **126. What is the difference between `typeof` and `instanceof`?**
   `typeof` returns type as string; `instanceof` checks prototype chain.
 - **127. What is the difference between `Object.keys()` and `Object.getOwnPropertyNames()`?**
@@ -1575,9 +1575,9 @@ JSON.parse(JSON.stringify(obj));
 - **133. What is the difference between `for...in` and `for...of`?**
   `for...in` iterates over property names; `for...of` iterates over values.
 - **134. What is the difference between `Array.prototype.forEach()` and `Array.prototype.map()`?**
-  `forEach()` does not return a new array; `map()` returns a new array[^6].
+  `forEach()` does not return a new array; `map()` returns a new array
 - **135. What is the difference between `Array.prototype.filter()` and `Array.prototype.find()`?**
-  `filter()` returns all matches; `find()` returns the first match[^6].
+  `filter()` returns all matches; `find()` returns the first match
 - **136. What is the difference between `Array.prototype.every()` and `Array.prototype.some()`?**
   `every()` checks if all elements pass a test; `some()` checks if at least one passes.
 - **137. What is the difference between `Array.prototype.reduce()` and `Array.prototype.reduceRight()`?**
@@ -1585,9 +1585,9 @@ JSON.parse(JSON.stringify(obj));
 - **138. What is a higher-order function?**
   A function that takes one or more functions as arguments or returns a function.
 - **139. What is a callback hell?**
-  Nested callbacks leading to unreadable code[^3][^5].
+  Nested callbacks leading to unreadable code
 - **140. What is a promise chain?**
-  A sequence of `.then()` calls for handling asynchronous operations[^3][^5].
+  A sequence of `.then()` calls for handling asynchronous operations
 - **141. What is the difference between `Promise.all()` and `Promise.race()`?**
   `Promise.all()` waits for all promises to resolve; `Promise.race()` waits for the first to settle.
 - **142. What is the difference between `Promise.all()` and `Promise.allSettled()`?**
@@ -1595,19 +1595,19 @@ JSON.parse(JSON.stringify(obj));
 - **143. What is the difference between `Promise.race()` and `Promise.any()`?**
   `Promise.race()` settles when the first promise settles; `Promise.any()` resolves when the first promise resolves.
 - **144. What is the difference between `setTimeout()` and `setInterval()`?**
-  `setTimeout()` executes once after a delay; `setInterval()` executes repeatedly at intervals[^3][^7].
+  `setTimeout()` executes once after a delay; `setInterval()` executes repeatedly at intervals
 - **145. What is the difference between `clearTimeout()` and `clearInterval()`?**
   `clearTimeout()` cancels a `setTimeout()`; `clearInterval()` cancels a `setInterval()`.
 - **146. What is a generator function?**
-  A generator function can be paused and resumed, using the `yield` keyword[^3][^5].
+  A generator function can be paused and resumed, using the `yield` keyword
 - **147. What is the difference between `yield` and `return`?**
   `yield` pauses a generator function; `return` ends it.
 - **148. What is a memoization function?**
-  A memoization function caches results of expensive function calls[^3][^5].
+  A memoization function caches results of expensive function calls
 - **149. What is a polyfill?**
-  A polyfill is code that provides modern functionality in older browsers[^4].
+  A polyfill is code that provides modern functionality in older browsers
 - **150. What is a shim?**
-  A shim is a library that brings a new API to an older environment[^4].
+  A shim is a library that brings a new API to an older environment
 
 ---
 
