@@ -1750,6 +1750,715 @@ import { name } from "./module.js";
 
 ## [[⬆]](#toc) <a name=ReactFramework>React Framework</a>
 
+---
+
+## 1. What is React?
+
+**Answer:**
+React is an open-source JavaScript library for building user interfaces, especially single-page applications.
+
+---
+
+## 2. Who developed React?
+
+**Answer:**
+React was developed by Facebook.
+
+---
+
+## 3. What are the main features of React?
+
+**Answer:**
+Virtual DOM, components, JSX, one-way data binding, and declarative UI.
+
+---
+
+## 4. What is JSX?
+
+**Answer:**
+JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript.
+
+---
+
+## 5. Why can't browsers read JSX directly?
+
+**Answer:**
+Browsers only understand JavaScript, so JSX must be transpiled to JavaScript using tools like Babel.
+
+---
+
+## 6. What is a component in React?
+
+**Answer:**
+A component is a self-contained piece of code that returns a React element to be rendered on the DOM.
+
+---
+
+## 7. What are the two types of components in React?
+
+**Answer:**
+Class components and Functional components.
+
+---
+
+## 8. What is the difference between a class component and a functional component?
+
+**Answer:**
+Class components use ES6 classes and lifecycle methods; functional components are simpler, use functions, and can use hooks.
+
+---
+
+## 9. What is a prop in React?
+
+**Answer:**
+Props (short for properties) are read-only inputs passed to a component.
+
+---
+
+## 10. What is state in React?
+
+**Answer:**
+State is an object that stores data that may change over the lifetime of a component.
+
+---
+
+## 11. What is the difference between props and state?
+
+**Answer:**
+Props are passed to a component (like function parameters), while state is managed within the component (like variables declared inside a function).
+
+---
+
+## 12. How do you update the state of a component?
+
+**Answer:**
+Using `setState()` in class components or the state setter function from `useState()` in functional components.
+
+---
+
+## 13. What is the Virtual DOM?
+
+**Answer:**
+The Virtual DOM is a lightweight copy of the real DOM. React uses it to optimize updates and rendering.
+
+---
+
+## 14. How does React use the Virtual DOM?
+
+**Answer:**
+React compares the Virtual DOM with a snapshot before and after changes to update only what has changed in the real DOM.
+
+---
+
+## 15. What is the significance of keys in React lists?
+
+**Answer:**
+Keys help React identify which items have changed, are added, or are removed, improving performance.
+
+---
+
+## 16. What are controlled components?
+
+**Answer:**
+Controlled components are form elements whose value is controlled by React state.
+
+---
+
+## 17. What are uncontrolled components?
+
+**Answer:**
+Uncontrolled components are form elements whose value is handled by the DOM itself, not by React state.
+
+---
+
+## 18. What are React hooks?
+
+**Answer:**
+Hooks are functions that let you use state and other React features in functional components.
+
+---
+
+## 19. What is the useState hook?
+
+**Answer:**
+`useState` is a hook that lets you add state to functional components.
+
+---
+
+## 20. What is the useEffect hook?
+
+**Answer:**
+`useEffect` lets you perform side effects (like data fetching or subscriptions) in functional components.
+
+---
+
+## 21. What is the useRef hook?
+
+**Answer:**
+`useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument.
+
+---
+
+## 22. What is the useContext hook?
+
+**Answer:**
+`useContext` lets you subscribe to React context without introducing nesting.
+
+---
+
+## 23. What is the useReducer hook?
+
+**Answer:**
+`useReducer` is an alternative to `useState` for managing complex state logic.
+
+---
+
+## 24. What is the useCallback hook?
+
+**Answer:**
+`useCallback` returns a memoized callback function, useful for optimizing child components that rely on reference equality.
+
+---
+
+## 25. What is the useMemo hook?
+
+**Answer:**
+`useMemo` returns a memoized value, useful for optimizing expensive calculations.
+
+---
+
+## 26. What is React context?
+
+**Answer:**
+React context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+---
+
+## 27. What is a higher-order component (HOC)?
+
+**Answer:**
+A higher-order component is a function that takes a component and returns a new component with added functionality.
+
+---
+
+## 28. What are React lifecycle methods?
+
+**Answer:**
+Lifecycle methods are special methods in class components that allow you to run code at particular points in a component’s lifecycle (e.g., `componentDidMount`).
+
+---
+
+## 29. What is componentDidMount?
+
+**Answer:**
+`componentDidMount` is invoked immediately after a component is mounted (inserted into the DOM tree).
+
+---
+
+## 30. What is componentDidUpdate?
+
+**Answer:**
+`componentDidUpdate` is invoked immediately after updating occurs (not called for the initial render).
+
+---
+
+## 31. What is componentWillUnmount?
+
+**Answer:**
+`componentWillUnmount` is invoked immediately before a component is unmounted and destroyed.
+
+---
+
+## 32. What is shouldComponentUpdate?
+
+**Answer:**
+`shouldComponentUpdate` lets you control whether a component should re-render after state or props change.
+
+---
+
+## 33. What is React Router?
+
+**Answer:**
+React Router is a standard library for routing in React applications.
+
+---
+
+## 34. How do you create a route in React Router?
+
+**Answer:**
+Using the `<Route>` component, e.g., `<Route path="/about" component={About} />`.
+
+---
+
+## 35. What is a Link in React Router?
+
+**Answer:**
+A `<Link>` is used to navigate between routes without reloading the page.
+
+---
+
+## 36. What is a NavLink in React Router?
+
+**Answer:**
+A `<NavLink>` is a special version of `<Link>` that adds styling attributes when its route is active.
+
+---
+
+## 37. What is a Redirect in React Router?
+
+**Answer:**
+A `<Redirect>` is used to redirect the user to another route.
+
+---
+
+## 38. What is a Switch in React Router?
+
+**Answer:**
+A `<Switch>` renders the first child `<Route>` that matches the location.
+
+---
+
+## 39. What is lazy loading in React?
+
+**Answer:**
+Lazy loading is a technique for loading components only when they are needed, improving performance.
+
+---
+
+## 40. How do you implement lazy loading in React?
+
+**Answer:**
+Using `React.lazy()` and `Suspense`, e.g.,
+
+```jsx
+const LazyComponent = React.lazy(() => import("./LazyComponent"));
+<Suspense fallback={<div>Loading...</div>}>
+  <LazyComponent />
+</Suspense>;
+```
+
+---
+
+## 41. What is code splitting in React?
+
+**Answer:**
+Code splitting is the process of splitting your code into smaller bundles which are loaded on demand.
+
+---
+
+## 42. What is a React fragment?
+
+**Answer:**
+A React fragment lets you group a list of children without adding extra nodes to the DOM.
+
+---
+
+## 43. How do you use a React fragment?
+
+**Answer:**
+Using `<React.Fragment>` or the shorthand `<>...</>`.
+
+---
+
+## 44. What is prop drilling?
+
+**Answer:**
+Prop drilling is the process of passing props from a parent component down through multiple layers of child components.
+
+---
+
+## 45. How can you avoid prop drilling?
+
+**Answer:**
+By using React context or state management libraries like Redux.
+
+---
+
+## 46. What is Redux?
+
+**Answer:**
+Redux is a predictable state container for JavaScript apps, often used with React.
+
+---
+
+## 47. What are the main components of Redux?
+
+**Answer:**
+Store, actions, and reducers.
+
+---
+
+## 48. What is a Redux store?
+
+**Answer:**
+The store is an object that holds the application state.
+
+---
+
+## 49. What is a Redux action?
+
+**Answer:**
+An action is an object that describes what happened in the app.
+
+---
+
+## 50. What is a Redux reducer?
+
+**Answer:**
+A reducer is a function that determines changes to the application’s state based on actions.
+
+---
+
+## 51. What is the purpose of the `connect` function in React-Redux?
+
+**Answer:**
+`connect` connects a React component to the Redux store.
+
+---
+
+## 52. What is the `Provider` component in React-Redux?
+
+**Answer:**
+`<Provider>` makes the Redux store available to any nested components.
+
+---
+
+## 53. What is a middleware in Redux?
+
+**Answer:**
+Middleware provides a third-party extension point between dispatching an action and the moment it reaches the reducer (e.g., for logging, async).
+
+---
+
+## 54. What is Redux Thunk?
+
+**Answer:**
+Redux Thunk is middleware that allows you to write action creators that return a function instead of an action.
+
+---
+
+## 55. What is Redux Saga?
+
+**Answer:**
+Redux Saga is a middleware library that helps manage side effects in Redux using ES6 generators.
+
+---
+
+## 56. What are React Portals?
+
+**Answer:**
+Portals provide a way to render children into a DOM node that exists outside the parent component’s DOM hierarchy.
+
+---
+
+## 57. How do you use React Portals?
+
+**Answer:**
+Using `ReactDOM.createPortal(child, container)`.
+
+---
+
+## 58. What is error boundary in React?
+
+**Answer:**
+An error boundary is a React component that catches JavaScript errors anywhere in its child component tree.
+
+---
+
+## 59. How do you create an error boundary?
+
+**Answer:**
+By defining a class component with `static getDerivedStateFromError()` or `componentDidCatch()`.
+
+---
+
+## 60. What is the purpose of `static getDerivedStateFromError()`?
+
+**Answer:**
+It renders a fallback UI after an error has been thrown.
+
+---
+
+## 61. What is the purpose of `componentDidCatch()`?
+
+**Answer:**
+It logs error information.
+
+---
+
+## 62. What is the difference between `componentDidCatch` and `getDerivedStateFromError`?
+
+**Answer:**
+`getDerivedStateFromError` is used to render a fallback UI, and `componentDidCatch` is used for side effects like logging errors.
+
+---
+
+## 63. What is React.memo?
+
+**Answer:**
+`React.memo` is a higher-order component that memoizes the result, preventing unnecessary re-renders.
+
+---
+
+## 64. What is the difference between `React.memo` and `useMemo`?
+
+**Answer:**
+`React.memo` is for components, `useMemo` is for values.
+
+---
+
+## 65. What is the difference between `useCallback` and `useMemo`?
+
+**Answer:**
+`useCallback` returns a memoized callback, `useMemo` returns a memoized value.
+
+---
+
+## 66. What is a custom hook?
+
+**Answer:**
+A custom hook is a JavaScript function whose name starts with "use" and that can call other hooks.
+
+---
+
+## 67. Why do custom hook names start with "use"?
+
+**Answer:**
+To follow the React hooks naming convention and ensure the linter can enforce hooks rules.
+
+---
+
+## 68. What is server-side rendering (SSR) in React?
+
+**Answer:**
+SSR is rendering React components on the server and sending the HTML to the client.
+
+---
+
+## 69. What is Next.js?
+
+**Answer:**
+Next.js is a React framework that enables server-side rendering and static site generation.
+
+---
+
+## 70. What is static site generation (SSG) in Next.js?
+
+**Answer:**
+SSG is pre-rendering pages at build time and serving static HTML.
+
+---
+
+## 71. What is the difference between SSR and SSG?
+
+**Answer:**
+SSR generates HTML on each request; SSG generates HTML at build time.
+
+---
+
+## 72. What is hydration in React?
+
+**Answer:**
+Hydration is attaching event handlers to the server-rendered HTML to make it interactive.
+
+---
+
+## 73. What is React Testing Library?
+
+**Answer:**
+React Testing Library is a lightweight solution for testing React components, focusing on behavior over implementation.
+
+---
+
+## 74. What is Jest?
+
+**Answer:**
+Jest is a JavaScript testing framework often used with React.
+
+---
+
+## 75. How do you test a React component?
+
+**Answer:**
+Using React Testing Library or Enzyme to render the component and assert expected behavior.
+
+---
+
+## 76. What is the difference between shallow and deep rendering?
+
+**Answer:**
+Shallow rendering renders only the component itself, not its children; deep rendering renders the component and all its children.
+
+---
+
+## 77. What is propTypes?
+
+**Answer:**
+`propTypes` is a mechanism for type-checking props passed to a component.
+
+---
+
+## 78. What is defaultProps?
+
+**Answer:**
+`defaultProps` is a way to provide default values for props.
+
+---
+
+## 79. How do you handle forms in React?
+
+**Answer:**
+By using controlled components or form libraries like Formik or React Hook Form.
+
+---
+
+## 80. What is Formik?
+
+**Answer:**
+Formik is a library for building forms in React with ease.
+
+---
+
+## 81. What is React Hook Form?
+
+**Answer:**
+React Hook Form is a library for managing forms with hooks and minimal re-renders.
+
+---
+
+## 82. What is the difference between Formik and React Hook Form?
+
+**Answer:**
+Formik uses a render props pattern, React Hook Form is hook-based and optimized for performance.
+
+---
+
+## 83. What is a React ref?
+
+**Answer:**
+A ref is a way to access DOM nodes or React elements directly.
+
+---
+
+## 84. How do you create a ref in React?
+
+**Answer:**
+Using `useRef` in functional components or `React.createRef()` in class components.
+
+---
+
+## 85. What is forwardRef in React?
+
+**Answer:**
+`forwardRef` lets a component forward a ref it receives to a child component.
+
+---
+
+## 86. What is the purpose of the key prop?
+
+**Answer:**
+The `key` prop helps React identify which items have changed, are added, or are removed.
+
+---
+
+## 87. What is the difference between state and props?
+
+**Answer:**
+State is managed within the component; props are passed to the component from outside.
+
+---
+
+## 88. How do you pass data from child to parent component?
+
+**Answer:**
+By passing a function from the parent to the child as a prop, which the child calls with data.
+
+---
+
+## 89. What is reconciliation in React?
+
+**Answer:**
+Reconciliation is the process by which React updates the DOM to match the most recent component tree.
+
+---
+
+## 90. What is the difference between React and React Native?
+
+**Answer:**
+React is for web development; React Native is for mobile app development.
+
+---
+
+## 91. What is the difference between React and Angular?
+
+**Answer:**
+React is a library for building UIs; Angular is a full-fledged framework.
+
+---
+
+## 92. What is the difference between React and Vue?
+
+**Answer:**
+React is a library focused on the view layer; Vue is a progressive framework.
+
+---
+
+## 93. How do you optimize performance in React?
+
+**Answer:**
+By using `React.memo`, `useMemo`, `useCallback`, code splitting, lazy loading, and avoiding unnecessary re-renders.
+
+---
+
+## 94. What is the StrictMode component?
+
+**Answer:**
+`<StrictMode>` is a tool for highlighting potential problems in an application.
+
+---
+
+## 95. What is the purpose of the `useLayoutEffect` hook?
+
+**Answer:**
+`useLayoutEffect` is similar to `useEffect`, but it fires synchronously after all DOM mutations.
+
+---
+
+## 96. What is the difference between `useEffect` and `useLayoutEffect`?
+
+**Answer:**
+`useEffect` runs asynchronously after the browser has painted; `useLayoutEffect` runs synchronously after DOM mutations but before painting.
+
+---
+
+## 97. What is the purpose of the `useImperativeHandle` hook?
+
+**Answer:**
+`useImperativeHandle` customizes the instance value that is exposed to parent components when using `ref`.
+
+---
+
+## 98. What is the purpose of the `useDebugValue` hook?
+
+**Answer:**
+`useDebugValue` can be used to display a label for custom hooks in React DevTools.
+
+---
+
+## 99. What is the purpose of the `useReducer` hook?
+
+**Answer:**
+`useReducer` is useful for managing complex state logic that involves multiple sub-values or when the next state depends on the previous one.
+
+---
+
+## 100. How do you handle global state in React?
+
+**Answer:**
+By using React context, Redux, or other state management libraries.
+
+---
+
 ## [[⬆]](#toc) <a name=AngularFramework>Angular Framework</a>
 
 #### Q1: What is the difference between Angular's `ngOnInit` and constructor? ⭐⭐
