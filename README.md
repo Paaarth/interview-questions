@@ -1088,7 +1088,7 @@ Primitive types: `string`, `number`, `boolean`, `null`, `undefined`, `bigint`, `
 ### 3. What is the difference between `null` and `undefined`?
 
 **Answer:**
-`undefined` means a variable has been declared but not assigned a value. `null` is an assignment value representing no value or an empty value[^3][^5][^7].
+`undefined` means a variable has been declared but not assigned a value. `null` is an assignment value representing no value or an empty value[^3]
 
 ### 4. What is hoisting in JavaScript?
 
@@ -1098,37 +1098,37 @@ Hoisting is JavaScript’s default behavior of moving declarations to the top of
 ### 5. What is the difference between `var`, `let`, and `const`?
 
 **Answer:**
-`var` is function-scoped, `let` and `const` are block-scoped. `let` can be reassigned, `const` cannot be reassigned[^3][^5][^7].
+`var` is function-scoped, `let` and `const` are block-scoped. `let` can be reassigned, `const` cannot be reassigned[^3]
 
 ### 6. What is the difference between `==` and `===`?
 
 **Answer:**
-`==` checks for value equality after type coercion; `===` checks for value and type equality without coercion[^3][^5][^7].
+`==` checks for value equality after type coercion; `===` checks for value and type equality without coercion[^3]
 
 ### 7. What is a closure?
 
 **Answer:**
-A closure is a function that has access to its own scope, the outer function’s variables, and global variables[^3][^5][^7].
+A closure is a function that has access to its own scope, the outer function’s variables, and global variables[^3]
 
 ### 8. What is an anonymous function?
 
 **Answer:**
-An anonymous function is a function without a name, often used as arguments to other functions[^8].
+An anonymous function is a function without a name, often used as arguments to other functions
 
 ### 9. What is a callback function?
 
 **Answer:**
-A callback is a function passed as an argument to another function and executed after some event or task[^3][^5][^7].
+A callback is a function passed as an argument to another function and executed after some event or task[^3]
 
 ### 10. What is a promise?
 
 **Answer:**
-A promise is an object representing the eventual completion or failure of an asynchronous operation[^3][^5][^7].
+A promise is an object representing the eventual completion or failure of an asynchronous operation[^3]
 
 ### 11. What is `async/await`?
 
 **Answer:**
-`async/await` is a syntax to write asynchronous code that looks synchronous, using `async` functions and the `await` keyword[^3][^5][^7].
+`async/await` is a syntax to write asynchronous code that looks synchronous, using `async` functions and the `await` keyword[^3]
 
 ### 12. What is the purpose of `setTimeout()`?
 
@@ -1143,32 +1143,32 @@ A promise is an object representing the eventual completion or failure of an asy
 ### 14. What is the difference between `function` and `arrow function`?
 
 **Answer:**
-Arrow functions do not have their own `this`, `arguments`, `super`, or `new.target` bindings[^3][^5][^7].
+Arrow functions do not have their own `this`, `arguments`, `super`, or `new.target` bindings[^3]
 
 ### 15. What is the `this` keyword in JavaScript?
 
 **Answer:**
-`this` refers to the object it belongs to, depending on how a function is called[^3][^5][^7].
+`this` refers to the object it belongs to, depending on how a function is called[^3]
 
 ### 16. What is the difference between `call()`, `apply()`, and `bind()`?
 
 **Answer:**
-All three set the `this` value. `call()` and `apply()` call the function immediately, with `apply()` taking arguments as an array. `bind()` returns a new function with `this` set[^3][^5][^7].
+All three set the `this` value. `call()` and `apply()` call the function immediately, with `apply()` taking arguments as an array. `bind()` returns a new function with `this` set[^3]
 
 ### 17. What is event bubbling?
 
 **Answer:**
-Event bubbling is the propagation of an event from the innermost element up to the parent elements[^5][^7].
+Event bubbling is the propagation of an event from the innermost element up to the parent elements
 
 ### 18. What is event capturing?
 
 **Answer:**
-Event capturing is the propagation of an event from the outermost element down to the target element[^5][^7].
+Event capturing is the propagation of an event from the outermost element down to the target element
 
 ### 19. What is event delegation?
 
 **Answer:**
-Event delegation is attaching a single event listener to a parent to manage events of its children[^5][^7].
+Event delegation is attaching a single event listener to a parent to manage events of its children
 
 ### 20. What is the purpose of the `debugger` statement?
 
@@ -1178,67 +1178,67 @@ The `debugger` statement pauses code execution, allowing inspection of variables
 ### 21. What is the DOM?
 
 **Answer:**
-The Document Object Model (DOM) is a programming interface for web documents, representing the page so programs can change structure, style, and content[^8].
+The Document Object Model (DOM) is a programming interface for web documents, representing the page so programs can change structure, style, and content
 
 ### 22. How do you select an element by ID in JavaScript?
 
 **Answer:**
-`document.getElementById('id')`[^8].
+`document.getElementById('id')`
 
 ### 23. How do you select elements by class name?
 
 **Answer:**
-`document.getElementsByClassName('class')`[^8].
+`document.getElementsByClassName('class')`
 
 ### 24. How do you select elements by tag name?
 
 **Answer:**
-`document.getElementsByTagName('tag')`[^8].
+`document.getElementsByTagName('tag')`
 
 ### 25. How do you add an event listener to an element?
 
 **Answer:**
-`element.addEventListener('event', function)`[^8].
+`element.addEventListener('event', function)`
 
 ### 26. What is JSON?
 
 **Answer:**
-JSON (JavaScript Object Notation) is a lightweight data-interchange format based on JavaScript object syntax[^5][^7].
+JSON (JavaScript Object Notation) is a lightweight data-interchange format based on JavaScript object syntax
 
 ### 27. How do you convert a JavaScript object to JSON?
 
 **Answer:**
-`JSON.stringify(obj)`[^5][^7].
+`JSON.stringify(obj)`
 
 ### 28. How do you convert JSON to a JavaScript object?
 
 **Answer:**
-`JSON.parse(jsonString)`[^5][^7].
+`JSON.parse(jsonString)`
 
 ### 29. What is a prototype in JavaScript?
 
 **Answer:**
-A prototype is an object from which other objects inherit properties[^3][^5][^7].
+A prototype is an object from which other objects inherit properties[^3]
 
 ### 30. What is prototypal inheritance?
 
 **Answer:**
-Prototypal inheritance is a feature where objects can inherit properties and methods from other objects[^3][^5][^7].
+Prototypal inheritance is a feature where objects can inherit properties and methods from other objects[^3]
 
 ### 31. What is the difference between `Object.create()` and constructor functions?
 
 **Answer:**
-`Object.create()` creates a new object with a specified prototype; constructor functions create objects using the `new` keyword[^3][^5][^7].
+`Object.create()` creates a new object with a specified prototype; constructor functions create objects using the `new` keyword[^3]
 
 ### 32. What is a constructor function?
 
 **Answer:**
-A constructor function is used to create objects with the `new` keyword[^3][^5][^7].
+A constructor function is used to create objects with the `new` keyword[^3]
 
 ### 33. What is a class in JavaScript?
 
 **Answer:**
-A class is a template for creating objects, introduced in ES6[^3][^5][^7].
+A class is a template for creating objects, introduced in ES6[^3]
 
 ### 34. What is the difference between `forEach()` and `map()`?
 
@@ -1278,57 +1278,57 @@ A class is a template for creating objects, introduced in ES6[^3][^5][^7].
 ### 41. What is a rest parameter?
 
 **Answer:**
-A rest parameter allows a function to accept an indefinite number of arguments as an array[^3][^5][^7].
+A rest parameter allows a function to accept an indefinite number of arguments as an array[^3]
 
 ### 42. What is a spread operator?
 
 **Answer:**
-The spread operator (`...`) expands arrays or objects into individual elements[^3][^5][^7].
+The spread operator (`...`) expands arrays or objects into individual elements[^3]
 
 ### 43. What is destructuring assignment?
 
 **Answer:**
-Destructuring assignment unpacks values from arrays or properties from objects into distinct variables[^3][^5][^7].
+Destructuring assignment unpacks values from arrays or properties from objects into distinct variables[^3]
 
 ### 44. What is the difference between `Object.keys()` and `Object.values()`?
 
 **Answer:**
-`Object.keys()` returns an array of keys; `Object.values()` returns an array of values[^3][^5][^7].
+`Object.keys()` returns an array of keys; `Object.values()` returns an array of values[^3]
 
 ### 45. What is the difference between `Object.freeze()` and `const`?
 
 **Answer:**
-`Object.freeze()` makes an object immutable; `const` prevents reassignment but not mutation of the object's properties[^8].
+`Object.freeze()` makes an object immutable; `const` prevents reassignment but not mutation of the object's properties
 
 ### 46. What is a generator function?
 
 **Answer:**
-A generator function allows you to pause and resume execution, using the `yield` keyword[^3][^5][^7].
+A generator function allows you to pause and resume execution, using the `yield` keyword[^3]
 
 ### 47. What is memoization?
 
 **Answer:**
-Memoization is an optimization technique that stores the results of expensive function calls[^3][^5][^7].
+Memoization is an optimization technique that stores the results of expensive function calls[^3]
 
 ### 48. What is currying?
 
 **Answer:**
-Currying is converting a function with multiple arguments into a sequence of functions with single arguments[^3][^5][^7].
+Currying is converting a function with multiple arguments into a sequence of functions with single arguments[^3]
 
 ### 49. What is a pure function?
 
 **Answer:**
-A pure function always returns the same output for the same input and has no side effects[^8].
+A pure function always returns the same output for the same input and has no side effects
 
 ### 50. What is functional programming?
 
 **Answer:**
-Functional programming is a paradigm where programs are constructed by composing pure functions, avoiding shared state, mutable data, and side-effects[^8].
+Functional programming is a paradigm where programs are constructed by composing pure functions, avoiding shared state, mutable data, and side-effects
 
 ---
 
 **Note:**
-Due to space and practical constraints, this answer provides the first 50 questions and answers in detail. However, here is a summary of additional question topics to reach 200, with brief answers or concepts. For a full list with detailed answers, consider using resources like GitHub repositories or interview prep sites[^4][^6][^8].
+Due to space and practical constraints, this answer provides the first 50 questions and answers in detail. However, here is a summary of additional question topics to reach 200, with brief answers or concepts. For a full list with detailed answers, consider using resources like GitHub repositories or interview prep sites[^4][^6]
 
 ---
 
@@ -1539,7 +1539,7 @@ JSON.parse(JSON.stringify(obj));
 - **115. What is a curried function?**
   A curried function is a function that takes multiple arguments one at a time[^3][^5].
 - **116. What is a pure function?**
-  A pure function always returns the same output for the same input and has no side effects[^8].
+  A pure function always returns the same output for the same input and has no side effects
 - **117. What is a side effect?**
   A side effect is any application state change observable outside the called function.
 - **118. What is a closure?**
@@ -1614,65 +1614,65 @@ JSON.parse(JSON.stringify(obj));
 ### 151–200: DOM, Events, Modules, and Practical Coding
 
 - **151. What is the DOM?**
-  The Document Object Model is a programming interface for web documents[^8].
+  The Document Object Model is a programming interface for web documents
 - **152. How do you select an element by ID?**
-  `document.getElementById('id')`[^8].
+  `document.getElementById('id')`
 - **153. How do you select elements by class name?**
-  `document.getElementsByClassName('class')`[^8].
+  `document.getElementsByClassName('class')`
 - **154. How do you select elements by tag name?**
-  `document.getElementsByTagName('tag')`[^8].
+  `document.getElementsByTagName('tag')`
 - **155. How do you select elements with CSS selectors?**
-  `document.querySelector('selector')` or `document.querySelectorAll('selector')`[^8].
+  `document.querySelector('selector')` or `document.querySelectorAll('selector')`
 - **156. How do you add an event listener?**
-  `element.addEventListener('event', function)`[^8].
+  `element.addEventListener('event', function)`
 - **157. How do you remove an event listener?**
-  `element.removeEventListener('event', function)`[^8].
+  `element.removeEventListener('event', function)`
 - **158. What is event bubbling?**
-  Event bubbling is the propagation of an event from the innermost element up to the parent elements[^5][^7].
+  Event bubbling is the propagation of an event from the innermost element up to the parent elements
 - **159. What is event capturing?**
-  Event capturing is the propagation of an event from the outermost element down to the target element[^5][^7].
+  Event capturing is the propagation of an event from the outermost element down to the target element
 - **160. What is event delegation?**
-  Event delegation is attaching a single event listener to a parent to manage events of its children[^5][^7].
+  Event delegation is attaching a single event listener to a parent to manage events of its children
 - **161. How do you prevent the default action of an event?**
-  `event.preventDefault()`[^5][^7].
+  `event.preventDefault()`
 - **162. How do you stop event propagation?**
-  `event.stopPropagation()`[^5][^7].
+  `event.stopPropagation()`
 - **163. How do you create a new element?**
-  `document.createElement('tag')`[^8].
+  `document.createElement('tag')`
 - **164. How do you add a child element?**
-  `parent.appendChild(child)`[^8].
+  `parent.appendChild(child)`
 - **165. How do you remove a child element?**
-  `parent.removeChild(child)`[^8].
+  `parent.removeChild(child)`
 - **166. How do you get or set the text content of an element?**
-  `element.textContent`[^8].
+  `element.textContent`
 - **167. How do you get or set the inner HTML of an element?**
-  `element.innerHTML`[^8].
+  `element.innerHTML`
 - **168. How do you get or set the value of an input?**
-  `input.value`[^8].
+  `input.value`
 - **169. How do you change the style of an element?**
-  `element.style.property = value`[^8].
+  `element.style.property = value`
 - **170. How do you add or remove a class?**
-  `element.classList.add('class')` or `element.classList.remove('class')`[^8].
+  `element.classList.add('class')` or `element.classList.remove('class')`
 - **171. How do you check if an element has a class?**
-  `element.classList.contains('class')`[^8].
+  `element.classList.contains('class')`
 - **172. How do you toggle a class?**
-  `element.classList.toggle('class')`[^8].
+  `element.classList.toggle('class')`
 - **173. How do you get the parent of an element?**
-  `element.parentNode`[^8].
+  `element.parentNode`
 - **174. How do you get the children of an element?**
-  `element.children`[^8].
+  `element.children`
 - **175. How do you get the next or previous sibling?**
-  `element.nextSibling` or `element.previousSibling`[^8].
+  `element.nextSibling` or `element.previousSibling`
 - **176. How do you clone an element?**
-  `element.cloneNode(true)`[^8].
+  `element.cloneNode(true)`
 - **177. How do you insert an element before another?**
-  `parent.insertBefore(newNode, referenceNode)`[^8].
+  `parent.insertBefore(newNode, referenceNode)`
 - **178. How do you replace a child element?**
-  `parent.replaceChild(newChild, oldChild)`[^8].
+  `parent.replaceChild(newChild, oldChild)`
 - **179. How do you check if an element is visible?**
   `element.offsetParent !== null` or `getComputedStyle(element).display !== 'none'`.
 - **180. How do you get the position of an element?**
-  `element.getBoundingClientRect()`[^8].
+  `element.getBoundingClientRect()`
 - **181. How do you make an AJAX request?**
   Use `fetch()` or `XMLHttpRequest`.
 - **182. What is the difference between `fetch()` and `XMLHttpRequest`?**
@@ -1732,7 +1732,7 @@ fetch(url)
 - **198. What is the difference between localStorage and sessionStorage?**
   `localStorage` persists until cleared; `sessionStorage` is cleared when the session ends.
 - **199. What is a module in JavaScript?**
-  A module is a file containing JavaScript code that exports functionality[^5][^7].
+  A module is a file containing JavaScript code that exports functionality
 - **200. How do you export and import a module?**
 
 ```javascript
