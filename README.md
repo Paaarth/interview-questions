@@ -2461,22 +2461,112 @@ By using React context, Redux, or other state management libraries.
 
 ## [[⬆]](#toc) <a name=AngularFramework>Angular Framework</a>
 
-#### Q1: What is the difference between Angular's `ngOnInit` and constructor? ⭐⭐
+## Trending Angular Framework Interview Questions and Answers (2025)
 
-**Answer:**
+**1. What is Angular and how does it differ from AngularJS?**
 
-- The **constructor** is a default method in TypeScript classes that gets called when a class is instantiated.
-- **ngOnInit** is an Angular lifecycle hook that runs after Angular has finished initializing all data-bound properties.
-- Key difference: Use constructor for basic initialization and dependency injection, use ngOnInit for component-specific initialization logic.
+Angular is a modern, TypeScript-based open-source framework developed by Google for building dynamic single-page applications (SPAs). Unlike AngularJS, which is based on JavaScript and uses a controller-based architecture, Angular adopts a component-based architecture, offers improved performance, better tooling (like Angular CLI), and supports mobile development[^1][^2].
 
-#### Q2: Explain the difference between Angular's `ngIf` and `hidden` property ⭐⭐
+**2. What are the main building blocks of Angular applications?**
 
-**Answer:**
+The primary building blocks are:
 
-- **ngIf** is a structural directive that completely removes/adds elements from the DOM based on the condition.
-- **hidden** is a DOM property that simply toggles visibility using CSS (display: none).
-- Key difference: ngIf is better for memory efficiency as it destroys unused components, while hidden maintains them in memory.
+- Components: Control views and logic.
+- Modules: Group related components, directives, pipes, and services.
+- Templates: Define the view layer.
+- Services: Provide reusable business logic.
+- Directives: Manipulate DOM or extend HTML.
+- Pipes: Transform data in templates[^1][^2].
 
+**3. Explain the difference between Components and Directives.**
+
+- Components: Define views (UI) and logic; always have a template.
+- Directives: Add behavior to existing DOM elements; do not have their own templates. Attribute directives modify the appearance/behavior of elements, while structural directives (like *ngIf, *ngFor) change the DOM layout[^1][^2].
+
+**4. What is Data Binding in Angular and what are its types?**
+
+Data binding is the mechanism to coordinate parts of a template with parts of a component. The main types are:
+
+- Interpolation: `{{ value }}`
+- Property Binding: `[property]="value"`
+- Event Binding: `(event)="handler"`
+- Two-way Binding: `[(ngModel)]="value"`[^1][^2].
+
+**5. What is Angular CLI and what are some common commands?**
+
+Angular CLI is a command-line tool for creating, building, testing, and deploying Angular applications. Common commands include:
+
+- `ng new`: Create a new Angular project.
+- `ng serve`: Run the development server.
+- `ng generate component|service|module`: Generate code scaffolding.
+- `ng build`: Build the application for production[^2].
+
+**6. What is RxJS and how does Angular use it?**
+
+RxJS is a library for reactive programming using Observables, allowing you to work with asynchronous data streams. Angular uses RxJS extensively for handling HTTP requests, user input events, and more, enabling powerful composition and transformation of data streams[^3].
+
+**7. What are Angular Pipes and how do you create a custom pipe?**
+
+Pipes transform displayed values in templates (e.g., date, currency). To create a custom pipe, use the `@Pipe` decorator and implement the `PipeTransform` interface. Example:
+
+```typescript
+@Pipe({name: 'capitalize'})
+export class CapitalizePipe implements PipeTransform {
+  transform(value: string): string {
+    return value.charAt(0).toUpperCase() + value.slice(1);
+  }
+}
+```
+
+Use in template: `{{ 'hello' | capitalize }}`[^1][^2].
+
+**8. What is the difference between template-driven and reactive forms?**
+
+- Template-driven forms: Defined in the template, suitable for simple forms, use `ngModel` for two-way binding.
+- Reactive forms: Defined in the component class, provide more control and scalability, use `FormGroup` and `FormControl` for explicit management[^2].
+
+**9. What is AOT (Ahead-of-Time) compilation and why is it important?**
+
+AOT compiles Angular HTML and TypeScript code into efficient JavaScript before the browser downloads and runs the code. This leads to faster rendering, smaller bundle sizes, and early detection of template errors[^2].
+
+**10. How does Angular prevent XSS (Cross-Site Scripting) attacks?**
+
+Angular automatically sanitizes untrusted values in templates. For example, if a `<script>` tag is used within a template, Angular removes it and warns in the console, preventing script injection attacks[^4][^1]. The framework uses a built-in DOM sanitizer to ensure only safe content is rendered.
+
+**11. What are HTTP Interceptors and their use cases?**
+
+HTTP Interceptors are services that inspect and transform HTTP requests and responses globally. Use cases include adding authentication tokens, logging, error handling, and modifying request/response data[^2].
+
+**12. How does Angular support lazy loading and why is it beneficial?**
+
+Lazy loading allows modules to be loaded on demand rather than at initial load, reducing the size of the main bundle and improving application startup time. It is implemented using the Angular Router's `loadChildren` property in route definitions[^1].
+
+**13. What is Angular Ivy and its advantages?**
+
+Angular Ivy is the latest rendering engine for Angular. Advantages include:
+
+- Smaller bundle sizes.
+- Faster compilation.
+- Improved debugging.
+- Better type checking.
+- Support for lazy loading of components[^1].
+
+**14. How do you optimize Angular application performance?**
+
+- Use AOT compilation.
+- Implement lazy loading.
+- Use trackBy with `*ngFor` to optimize list rendering.
+- Avoid unnecessary change detection cycles.
+- Use OnPush change detection strategy where possible.
+- Minimize use of third-party libraries and large polyfills[^2].
+
+**15. What is the role of the trackBy function in ngFor?**
+
+The `trackBy` function helps Angular identify items in a list by a unique identifier, reducing DOM manipulations and improving performance when rendering large lists[^2].
+
+These questions and answers reflect the current trends and expectations for Angular interviews in 2025, covering both fundamental concepts and advanced, practical scenarios[^4][^1][^5][^3][^2].
+
+<div style="text-align: center">⁂</div>
 ## [[⬆]](#toc) <a name=NodejsBackend>Node.js Backend</a>
 
 #### Q1: What is the Event Loop in Node.js? ⭐⭐
